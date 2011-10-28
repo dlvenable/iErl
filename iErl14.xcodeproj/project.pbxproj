@@ -339,9 +339,11 @@
 		27167DCC13C4E1BF001CC5B6 /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = D93F40621256660000AF842F /* vm.c */; };
 		27167DCE13C4E1BF001CC5B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		27167DCF13C4E1BF001CC5B6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E24C5B124031A700AC152E /* libicucore.dylib */; };
-		2796230C142106A80051455D /* crypto_drv_ios.c in Sources */ = {isa = PBXBuildFile; fileRef = 2796230014201AC60051455D /* crypto_drv_ios.c */; };
+		27235618145F050F00F349AD /* crypto_drv_ios.c in Sources */ = {isa = PBXBuildFile; fileRef = 2796230014201AC60051455D /* crypto_drv_ios.c */; };
 		27A37446143E98C7005A577D /* CouchbaseAppServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A37444143E98C7005A577D /* CouchbaseAppServer.h */; };
 		27A37447143E98C7005A577D /* CouchbaseAppServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A37445143E98C7005A577D /* CouchbaseAppServer.m */; };
+		27C5709D145B70DB008EC203 /* libcrypto-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C5709B145B70DB008EC203 /* libcrypto-iphoneos.a */; };
+		27C5709E145B70DB008EC203 /* libcrypto-iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C5709C145B70DB008EC203 /* libcrypto-iphonesimulator.a */; };
 		27CB653C143A395400EEA1F2 /* CouchbaseViewDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CB653A143A395400EEA1F2 /* CouchbaseViewDispatcher.h */; };
 		27CB653D143A395400EEA1F2 /* CouchbaseViewDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CB653B143A395400EEA1F2 /* CouchbaseViewDispatcher.m */; };
 		27CB6545143A423E00EEA1F2 /* CouchbaseCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CB6543143A423D00EEA1F2 /* CouchbaseCallbacks.h */; };
@@ -387,9 +389,11 @@
 		270F4E5D143688E300234600 /* term_to_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = term_to_objc.h; sourceTree = "<group>"; };
 		270F4E5E143688E300234600 /* term_to_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = term_to_objc.m; sourceTree = "<group>"; };
 		27167DD413C4E1BF001CC5B6 /* libiErl14.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiErl14.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2796230014201AC60051455D /* crypto_drv_ios.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crypto_drv_ios.c; path = src/crypto_drv_ios.c; sourceTree = "<group>"; };
+		2796230014201AC60051455D /* crypto_drv_ios.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crypto_drv_ios.c; path = src/crypto_drv_ios.c; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		27A37444143E98C7005A577D /* CouchbaseAppServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouchbaseAppServer.h; sourceTree = "<group>"; };
 		27A37445143E98C7005A577D /* CouchbaseAppServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouchbaseAppServer.m; sourceTree = "<group>"; };
+		27C5709B145B70DB008EC203 /* libcrypto-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-iphoneos.a"; path = "../ios-openssl/lib/libcrypto-iphoneos.a"; sourceTree = SOURCE_ROOT; };
+		27C5709C145B70DB008EC203 /* libcrypto-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-iphonesimulator.a"; path = "../ios-openssl/lib/libcrypto-iphonesimulator.a"; sourceTree = SOURCE_ROOT; };
 		27CB653A143A395400EEA1F2 /* CouchbaseViewDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouchbaseViewDispatcher.h; sourceTree = "<group>"; };
 		27CB653B143A395400EEA1F2 /* CouchbaseViewDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouchbaseViewDispatcher.m; sourceTree = "<group>"; };
 		27CB6543143A423D00EEA1F2 /* CouchbaseCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouchbaseCallbacks.h; sourceTree = "<group>"; };
@@ -431,14 +435,14 @@
 		D93F40631256660000AF842F /* vm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vm.h; path = src/vm.h; sourceTree = SOURCE_ROOT; };
 		D9ABA80113DFB5CC00D072BE /* erl_nif_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = erl_nif_compat.h; sourceTree = "<group>"; };
 		D9ABA80313DFB5CC00D072BE /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
-		D9ABA80413DFB5CC00D072BE /* snappy-config.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "snappy-config.h"; sourceTree = "<group>"; };
+		D9ABA80413DFB5CC00D072BE /* snappy-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-config.h"; sourceTree = "<group>"; };
 		D9ABA80513DFB5CC00D072BE /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		D9ABA80613DFB5CC00D072BE /* snappy-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-internal.h"; sourceTree = "<group>"; };
 		D9ABA80713DFB5CC00D072BE /* snappy-sinksource.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-sinksource.cc"; sourceTree = "<group>"; };
 		D9ABA80813DFB5CC00D072BE /* snappy-sinksource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-sinksource.h"; sourceTree = "<group>"; };
 		D9ABA80913DFB5CC00D072BE /* snappy-stubs-internal.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-stubs-internal.cc"; sourceTree = "<group>"; };
 		D9ABA80A13DFB5CC00D072BE /* snappy-stubs-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-stubs-internal.h"; sourceTree = "<group>"; };
-		D9ABA80B13DFB5CC00D072BE /* snappy-stubs-public.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "snappy-stubs-public.h"; sourceTree = "<group>"; };
+		D9ABA80B13DFB5CC00D072BE /* snappy-stubs-public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-stubs-public.h"; sourceTree = "<group>"; };
 		D9ABA80C13DFB5CC00D072BE /* snappy.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snappy.cc; sourceTree = "<group>"; };
 		D9ABA80D13DFB5CC00D072BE /* snappy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snappy.h; sourceTree = "<group>"; };
 		D9ABA80E13DFB5CC00D072BE /* snappy_nif.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snappy_nif.cc; sourceTree = "<group>"; };
@@ -703,7 +707,7 @@
 		D9E24262123EA87000AC152E /* erl_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = erl_main.c; sourceTree = "<group>"; };
 		D9E24263123EA87000AC152E /* erl_unix_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = erl_unix_sys.h; sourceTree = "<group>"; };
 		D9E24264123EA87000AC152E /* erl_unix_sys_ddll.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = erl_unix_sys_ddll.c; sourceTree = "<group>"; };
-		D9E24265123EA87000AC152E /* sys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys.c; sourceTree = "<group>"; };
+		D9E24265123EA87000AC152E /* sys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys.c; sourceTree = "<group>"; tabWidth = 8; };
 		D9E24266123EA87000AC152E /* sys_float.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys_float.c; sourceTree = "<group>"; };
 		D9E24267123EA87000AC152E /* sys_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys_time.c; sourceTree = "<group>"; };
 		D9E2430A123EA87000AC152E /* erl_fixed_size_int_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = erl_fixed_size_int_types.h; sourceTree = "<group>"; };
@@ -773,6 +777,8 @@
 				D9F85BF313F193FC00A73E46 /* CoreFoundation.framework in Frameworks */,
 				27167DCE13C4E1BF001CC5B6 /* Foundation.framework in Frameworks */,
 				27167DCF13C4E1BF001CC5B6 /* libicucore.dylib in Frameworks */,
+				27C5709D145B70DB008EC203 /* libcrypto-iphoneos.a in Frameworks */,
+				27C5709E145B70DB008EC203 /* libcrypto-iphonesimulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +789,8 @@
 			isa = PBXGroup;
 			children = (
 				D9E24C5B124031A700AC152E /* libicucore.dylib */,
+				27C5709B145B70DB008EC203 /* libcrypto-iphoneos.a */,
+				27C5709C145B70DB008EC203 /* libcrypto-iphonesimulator.a */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1903,13 +1911,13 @@
 				D9ABA81513DFB5CC00D072BE /* snappy.cc in Sources */,
 				D9ABA81713DFB5CC00D072BE /* snappy_nif.cc in Sources */,
 				D9F85BF113F191A700A73E46 /* ios_drv.m in Sources */,
-				2796230C142106A80051455D /* crypto_drv_ios.c in Sources */,
 				2849E7AF1424A2B10075C6DE /* objc-dispatch-main.m in Sources */,
 				270F4E60143688E300234600 /* objc_to_term.m in Sources */,
 				270F4E62143688E300234600 /* term_to_objc.m in Sources */,
 				27CB653D143A395400EEA1F2 /* CouchbaseViewDispatcher.m in Sources */,
 				27CB6546143A423E00EEA1F2 /* CouchbaseCallbacks.m in Sources */,
 				27A37447143E98C7005A577D /* CouchbaseAppServer.m in Sources */,
+				27235618145F050F00F349AD /* crypto_drv_ios.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
