@@ -104,7 +104,7 @@ void erl_sys_ddll_init(void) {
  */
 int erts_sys_ddll_open2(char *full_name, void **handle, ErtsSysDdllError* err)
 {
-    fprintf(stderr, "Dynamic load attempt: %s\n", full_name);
+    //fprintf(stderr, "Dynamic load attempt: %s\n", full_name);
 #ifndef EMONK_DISABLED
     if(strcmp("emonk", full_name) == 0) {
         *handle = (void*) 1;
@@ -175,28 +175,28 @@ int erts_sys_ddll_load_nif_init(void *handle, void **function, ErtsSysDdllError*
     int res = ERL_DE_ERROR_NO_DDLL_FUNCTIONALITY;
 #ifndef EMONK_DISABLED
     if((size_t)handle == 1) {
-        fprintf(stderr, "Loaded NIF: emonk.\n");
+        //fprintf(stderr, "Loaded NIF: emonk.\n");
         *function = emonk_init;
         res = ERL_DE_NO_ERROR;
     }
 #endif
     if((size_t)handle == 2) {
-        fprintf(stderr, "Loaded NIF: ejson.\n");
+        //fprintf(stderr, "Loaded NIF: ejson.\n");
         *function = ejson_init;
         res = ERL_DE_NO_ERROR;
     }
     if((size_t)handle == 3) {
-        fprintf(stderr, "Loaded NIF: snappy.\n");
+        //fprintf(stderr, "Loaded NIF: snappy.\n");
         *function = snappy_init;
         res = ERL_DE_NO_ERROR;
     }
     if((size_t)handle == 4) {
-        fprintf(stderr, "Loaded NIF: ios.\n");
+        //fprintf(stderr, "Loaded NIF: ios.\n");
         *function = couch_ios_init;
         res = ERL_DE_NO_ERROR;
     }
     if((size_t)handle == 5) {
-        fprintf(stderr, "Loaded NIF: objc_dispatch.\n");
+        //fprintf(stderr, "Loaded NIF: objc_dispatch.\n");
         *function = objc_dispatch_init;
         res = ERL_DE_NO_ERROR;
     }

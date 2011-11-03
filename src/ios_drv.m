@@ -122,7 +122,6 @@ ERL_NIF_TERM post_notification(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv
         proplist = tail;
     }
 
-    NSLog(@"Posting notification from Erlang: %@ [%@]", cfname, dict);
     CFNotificationCenterPostNotification(CFNotificationCenterGetLocalCenter(), cfname, NULL, dict, true);
     CFRelease(cfname);
     CFRelease(dict);
