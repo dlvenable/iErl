@@ -6,10 +6,10 @@
 #include "util.h" //from emonk
 
 /* Driver interface declarations */
-int iosdrv_init(void);
-ErlDrvData iosdrv_start(ErlDrvPort port, char *command);
-int iosdrv_control(ErlDrvData drv_data, unsigned int command, char *buf,
-                   int len, char **rbuf, int rlen);
+static int iosdrv_init(void);
+static ErlDrvData iosdrv_start(ErlDrvPort port, char *command);
+static int iosdrv_control(ErlDrvData drv_data, unsigned int command, char *buf,
+						  int len, char **rbuf, int rlen);
 
 ErlDrvEntry ios_driver_entry = {
     iosdrv_init,
@@ -41,21 +41,19 @@ static ErlDrvTermData iosdrv_process = 0;
 static ErlDrvPort iosdrv_port = 0;
 static int couchdb_port = 0;
 
-void notificationCallback (CFNotificationCenterRef center,
+static void notificationCallback (CFNotificationCenterRef center,
                            void * observer,
                            CFStringRef name,
                            const void * object,
                            CFDictionaryRef userInfo) {
-    NSLog(@"Got request to restart.");
     if(iosdrv_process != 0)
     {
         ErlDrvTermData term[] = {ERL_DRV_ATOM, iosdrv_foregrounded, ERL_DRV_TUPLE, 1};
         driver_send_term(iosdrv_port, iosdrv_process, term, sizeof(term) / sizeof(term[0]));
-        iosdrv_process = 0;
     }
 }
 
-int iosdrv_init(void)
+static int iosdrv_init(void)
 {
     CFNotificationCenterAddObserver(CFNotificationCenterGetLocalCenter(), NULL,
             notificationCallback, (CFStringRef) @"CouchDBRequestRestart",
@@ -63,7 +61,7 @@ int iosdrv_init(void)
     return 0;
 }
 
-ErlDrvData iosdrv_start(ErlDrvPort port, char *command)
+static ErlDrvData iosdrv_start(ErlDrvPort port, char *command)
 {
     set_port_control_flags(port, PORT_CONTROL_FLAG_BINARY);
     iosdrv_foregrounded = driver_mk_atom("foregrounded");
@@ -72,14 +70,14 @@ ErlDrvData iosdrv_start(ErlDrvPort port, char *command)
     return 0;
 }
 
-int iosdrv_control(ErlDrvData drv_data, unsigned int command, char *buf,
-              int len, char **rbuf, int rlen)
+static int iosdrv_control(ErlDrvData drv_data, unsigned int command, char *buf,
+						  int len, char **rbuf, int rlen)
 {
     return -1;
 }
 
 
-ERL_NIF_TERM set_port(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
+static ERL_NIF_TERM set_port(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
 {
     int a;
     if (!enif_get_int(env, argv[0], &a)) {
@@ -94,7 +92,7 @@ ERL_NIF_TERM get_port(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
     return enif_make_int(env, couchdb_port);
 }
 
-ERL_NIF_TERM post_notification(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
+static ERL_NIF_TERM post_notification(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
 {
     ErlNifBinary name, key, value;
 
