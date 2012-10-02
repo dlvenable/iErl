@@ -342,13 +342,12 @@
 		27235618145F050F00F349AD /* crypto_drv_ios.c in Sources */ = {isa = PBXBuildFile; fileRef = 2796230014201AC60051455D /* crypto_drv_ios.c */; };
 		27A37446143E98C7005A577D /* CouchbaseAppServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A37444143E98C7005A577D /* CouchbaseAppServer.h */; };
 		27A37447143E98C7005A577D /* CouchbaseAppServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A37445143E98C7005A577D /* CouchbaseAppServer.m */; };
-		27C5709D145B70DB008EC203 /* libcrypto-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C5709B145B70DB008EC203 /* libcrypto-iphoneos.a */; };
-		27C5709E145B70DB008EC203 /* libcrypto-iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C5709C145B70DB008EC203 /* libcrypto-iphonesimulator.a */; };
 		27CB653C143A395400EEA1F2 /* CouchbaseViewDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CB653A143A395400EEA1F2 /* CouchbaseViewDispatcher.h */; };
 		27CB653D143A395400EEA1F2 /* CouchbaseViewDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CB653B143A395400EEA1F2 /* CouchbaseViewDispatcher.m */; };
 		27CB6545143A423E00EEA1F2 /* CouchbaseCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CB6543143A423D00EEA1F2 /* CouchbaseCallbacks.h */; };
 		27CB6546143A423E00EEA1F2 /* CouchbaseCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CB6544143A423E00EEA1F2 /* CouchbaseCallbacks.m */; };
 		2849E7AF1424A2B10075C6DE /* objc-dispatch-main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2849E7A51424A2B10075C6DE /* objc-dispatch-main.m */; };
+		2E5681DF161B5BCC00FF11A9 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5681DE161B5BCC00FF11A9 /* libcrypto.a */; };
 		D912EF2B13DFA1BE00E671FA /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1613DFA1BE00E671FA /* decode.c */; };
 		D912EF2C13DFA1BE00E671FA /* ejson.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1713DFA1BE00E671FA /* ejson.c */; };
 		D912EF2D13DFA1BE00E671FA /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1813DFA1BE00E671FA /* encode.c */; };
@@ -392,8 +391,6 @@
 		2796230014201AC60051455D /* crypto_drv_ios.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crypto_drv_ios.c; path = src/crypto_drv_ios.c; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		27A37444143E98C7005A577D /* CouchbaseAppServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouchbaseAppServer.h; sourceTree = "<group>"; };
 		27A37445143E98C7005A577D /* CouchbaseAppServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouchbaseAppServer.m; sourceTree = "<group>"; };
-		27C5709B145B70DB008EC203 /* libcrypto-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-iphoneos.a"; path = "../ios-openssl/lib/libcrypto-iphoneos.a"; sourceTree = SOURCE_ROOT; };
-		27C5709C145B70DB008EC203 /* libcrypto-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-iphonesimulator.a"; path = "../ios-openssl/lib/libcrypto-iphonesimulator.a"; sourceTree = SOURCE_ROOT; };
 		27CB653A143A395400EEA1F2 /* CouchbaseViewDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouchbaseViewDispatcher.h; sourceTree = "<group>"; };
 		27CB653B143A395400EEA1F2 /* CouchbaseViewDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouchbaseViewDispatcher.m; sourceTree = "<group>"; };
 		27CB6543143A423D00EEA1F2 /* CouchbaseCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouchbaseCallbacks.h; sourceTree = "<group>"; };
@@ -401,6 +398,7 @@
 		2849E7A51424A2B10075C6DE /* objc-dispatch-main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "objc-dispatch-main.m"; sourceTree = "<group>"; };
 		2849E7AB1424A2B10075C6DE /* objc-dispatch.app */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "objc-dispatch.app"; sourceTree = "<group>"; };
 		2849E7AE1424A2B10075C6DE /* objc_dispatch.erl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objc_dispatch.erl; sourceTree = "<group>"; };
+		2E5681DE161B5BCC00FF11A9 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../ios-openssl/lib/libcrypto.a"; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* iErl14_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iErl14_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D912EF1613DFA1BE00E671FA /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode.c; sourceTree = "<group>"; };
@@ -777,8 +775,7 @@
 				D9F85BF313F193FC00A73E46 /* CoreFoundation.framework in Frameworks */,
 				27167DCE13C4E1BF001CC5B6 /* Foundation.framework in Frameworks */,
 				27167DCF13C4E1BF001CC5B6 /* libicucore.dylib in Frameworks */,
-				27C5709D145B70DB008EC203 /* libcrypto-iphoneos.a in Frameworks */,
-				27C5709E145B70DB008EC203 /* libcrypto-iphonesimulator.a in Frameworks */,
+				2E5681DF161B5BCC00FF11A9 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,8 +786,6 @@
 			isa = PBXGroup;
 			children = (
 				D9E24C5B124031A700AC152E /* libicucore.dylib */,
-				27C5709B145B70DB008EC203 /* libcrypto-iphoneos.a */,
-				27C5709C145B70DB008EC203 /* libcrypto-iphonesimulator.a */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -807,6 +802,7 @@
 		0867D691FE84028FC02AAC07 /* iErl14 */ = {
 			isa = PBXGroup;
 			children = (
+				2E5681DE161B5BCC00FF11A9 /* libcrypto.a */,
 				D9ABA80013DFB5CC00D072BE /* snappy */,
 				D912EF1513DFA1BE00E671FA /* ejson */,
 				D9B75C46124C1B5200497E76 /* emonk */,
