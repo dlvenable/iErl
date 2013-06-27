@@ -347,7 +347,6 @@
 		27CB6545143A423E00EEA1F2 /* CouchbaseCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CB6543143A423D00EEA1F2 /* CouchbaseCallbacks.h */; };
 		27CB6546143A423E00EEA1F2 /* CouchbaseCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CB6544143A423E00EEA1F2 /* CouchbaseCallbacks.m */; };
 		2849E7AF1424A2B10075C6DE /* objc-dispatch-main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2849E7A51424A2B10075C6DE /* objc-dispatch-main.m */; };
-		2E5681DF161B5BCC00FF11A9 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5681DE161B5BCC00FF11A9 /* libcrypto.a */; };
 		D912EF2B13DFA1BE00E671FA /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1613DFA1BE00E671FA /* decode.c */; };
 		D912EF2C13DFA1BE00E671FA /* ejson.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1713DFA1BE00E671FA /* ejson.c */; };
 		D912EF2D13DFA1BE00E671FA /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1813DFA1BE00E671FA /* encode.c */; };
@@ -775,7 +774,6 @@
 				D9F85BF313F193FC00A73E46 /* CoreFoundation.framework in Frameworks */,
 				27167DCE13C4E1BF001CC5B6 /* Foundation.framework in Frameworks */,
 				27167DCF13C4E1BF001CC5B6 /* libicucore.dylib in Frameworks */,
-				2E5681DF161B5BCC00FF11A9 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
